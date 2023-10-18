@@ -1,6 +1,6 @@
 <?php
 
-//declare(strict_types=1);
+declare(strict_types=1);
 
 require_once 'UniversitiesAPI.php';
 require_once 'University.php';
