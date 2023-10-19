@@ -2,6 +2,8 @@
 
 declare(strict_types=1);
 
+namespace App;
+
 class UniversitiesAPI
 {
     private string $api;
@@ -32,7 +34,7 @@ class UniversitiesAPI
 
         $collection = new UniversityCollection();
 
-        foreach ($data as $index => $university) {
+        foreach ($data as $index => $university) { //$index var ņemt ārā
             $collection->add(new University(
                 $university->name,
                 $university->country,
